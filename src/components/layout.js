@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 import useSiteMetadata from "../hooks/use-sitemetadata";
 
 
-
 const Layout = ({children}) => {
     const {title, description} = useSiteMetadata();
 
@@ -16,9 +15,9 @@ const Layout = ({children}) => {
             box-sizing: border-box;
             margin: 0;
         }
-        // * + *{
-        //     margin-top: 1rem;
-        // }
+        * + *{
+             margin-top: 1rem;
+        }
         html, body{
             margin : 0;
             color: #555;
